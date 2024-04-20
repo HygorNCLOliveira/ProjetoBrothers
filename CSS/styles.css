@@ -1,0 +1,464 @@
+/*Geral*/
+*{
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: #000;
+    
+    color:#d3d3d3;
+}
+section{
+    margin-top:90px;
+    min-height: 100vh;
+}
+.interface{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-family: "Roboto Slab", serif;
+    color:#fff;
+}
+h2{
+    font-size: 50px;
+    color: #fff;
+    margin: 20px auto;
+}
+span.nomeDaLoja{
+    font-family: "Roboto Slab", serif;
+}
+
+/*navbar*/
+header{
+    width:100%;
+    height: 90px;
+    padding: 0;
+    position: fixed;
+    top:0;
+    left:0;
+    transition: .5s;
+    z-index: 1;
+}
+
+header.rolar{
+    background-color:rgba(0,0,0,0.7);
+    padding: 0 2%;
+    box-shadow: 0 2px 20px #7fa;
+}
+
+header .interface{
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .flex{
+    width: 100vw;
+    justify-content: left;
+    margin-left: 300px;
+}
+
+header .flex a img{
+    margin-top: 8px;
+    margin-right: 100px;
+    width: 75px;
+    height: 75px;
+    transition: .3s;
+}
+header .flex a img:hover{
+    transform: scale(1.1);
+}
+
+header ul li{
+    display:inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    transition: .2s;
+}
+header ul li:hover{
+    transform: scale(1.2);
+}
+
+header ul li i{
+    color:#fff;
+    font-size: 20px;
+    margin: 5px;
+}
+
+header ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color:#FFF;
+    position:relative;
+}
+header ul li a:hover{
+    color:#7fa;
+}
+
+header ul li a::after{
+    content:" ";
+    width: 0%;
+    height: 1px;
+    background-color:#7fa;
+    position:absolute;
+    bottom:0;
+    left: 0;
+    transition: .4s ease-in-out;
+}
+header ul li a:hover::after{
+    width: 100%;
+}
+
+
+/*Section1 inicio*/
+.section1 .interface{
+    margin-top:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.section1 .interface .flex{
+    height: 100vh;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt_Inicio .btn_inicio{
+    display: flex;
+    display: block;
+}
+
+.txt_Inicio .title{
+    color:#d3d3d3;
+    font-size: 50px;
+    font-family: "Roboto Slab", serif;
+}
+
+.txt_Inicio .logo {
+    margin-bottom: 50px;
+}
+
+.flex .txt_Inicio 
+.btn_inicio .btn_WAPP,
+.btn_inicio .btn_Endereco{
+    display: flex;
+}
+
+.flex .btn_inicio p{
+    margin-left: 20px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: #d9d9d9;
+    font-weight: 900;
+}
+
+.btn_inicio a button{
+    font-size: 30px;
+    margin-left: 30px;
+    padding: 10px 35px;
+    border-radius: 50px;
+    color:#d3d3d3;
+    border: 3px solid #d3d3d3;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.btn_inicio a button:hover{
+    transform: scale(1.1);
+    background-color: #7fa;
+    color:#000;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 0 8px #7fa;
+}
+
+
+.flex .video_Inicio video{
+    border-radius: 30px;
+    height: 80vh;
+}
+
+/*Section2 Serviços*/
+.section2 .interface{
+    background-image: url(/Imagens/Testes/IMG_BackServicos1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 110vh;
+}
+.section2 .flex{
+    width: 100vw;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.section2 .flex p{
+    margin: 5px;
+    text-justify:distribute;
+    font-size: 25px;
+    width: 900px;
+    color:#fff;
+}
+.section2 .flex span{
+    color:#7fa;
+}
+
+.section2 .flex .containerCards{
+    display: flex;
+}
+.section2 .cards{
+    width:250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin:40px 10px;
+    transition: .2s;
+    z-index: 0;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.section2 .cards:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 8px #7fa;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.section2 .cards img{
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.section2 .cards h3{
+    font-family: "Roboto Slab", serif;
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+.section2 .interface .flex .cards li{
+    text-justify: distribute;
+    font-size: 20px;
+}
+.section2 .cards ul{
+    padding:5px;
+}
+.section2 .cards ul li{
+    text-align: left;
+}
+
+/*Section3 Avaliacoes*/
+.section3 .interface .flex{
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.interface .flex .txtAvaliacoes{
+    width: 900px;
+    padding: 10px;
+}
+
+.txtAvaliacoes p{
+    font-size: 30px;
+}
+
+.txtAvaliacoes span{
+    font-size: 35px;
+    color:#7fa;
+}
+
+.btn_Avaliacoes{
+    display:flex;
+    justify-content: end;
+}
+
+.btn_Avaliacoes button{
+    margin-top: 50px;
+    font-size: 30px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 400;
+    color:#d3d3d3;
+    border: 3px solid #d3d3d3;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.btn_Avaliacoes button:hover{
+    transform: scale(1.1);
+    background-color: #7fa;
+    color:#000;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 0 8px #7fa;
+}
+
+.flex .slider{
+    width: 400px;
+    height: 730px;
+    background-image: url(/Imagens/Avaliacoes/TesteAvaliacao1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .containerSlide{
+    margin-top: 170px;
+    overflow: hidden;
+    width: 300px;
+    height: 270px;
+}
+
+.containerSlide .slide{
+    display: flex;
+    transition: transform 0.5s infinite;
+    transform: translateX(0);
+}
+
+.slide img{
+    object-fit: cover;
+    width: 300px;
+}
+
+/* Section4 Contatos*/
+.section4 .interface{
+    box-shadow: 0 20px 50px #d3d3d3a1;
+}
+
+.section4 .flex .containerContatos{
+    display: block;
+}
+.flex .btn_Contato button{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 600px;
+    height: 80px;
+    border: 2px solid #d3d3d3;
+    border-radius: 20px;
+    background-color: transparent;
+    color:#d3d3d3;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 30px;
+    margin: 50px;
+    cursor:pointer;
+    transition: .2s;
+}
+.flex .btn_Contato a{
+    color:#d3d3d3;
+    text-decoration: none;
+}
+.flex .btn_Contato button i{
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+.flex .btn_Contato button:hover{
+    background-color: #d3d3d3;
+    border: none;
+    color:#000;
+    transform: scale(1.1);
+}
+
+/*Section5 Envios*/
+
+.section5 .interface{
+    height: 100vh;
+    background-image: url(/Imagens/Envios/caixas.jpg);
+}
+
+.section5 .interface .flex{
+    justify-content: space-around;
+    width: 90vw;
+}
+
+.flex .imgs_Envios{
+    display: flex;
+    flex-direction: column;
+} 
+
+.flex .imgs_Envios img{
+    width: 300px;
+    margin: 20px;
+    border-radius: 20px; 
+}
+
+.txt_Envios h3{
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 5px 5px 10px #000;
+}
+.txt_Envios p{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 5px 5px 10px #000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Section6 Sobre*/
+.section6 .interface h2{
+    color:#d3d3d3;
+}
+.flex .txt_Sobre{
+    margin: 50px;
+}
+
+.txt_Sobre h3{
+    color:#d3d3d3;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.txt_Sobre p{
+    font-size: 24px;
+    color: #d3d3d3;
+    font-weight: 400;
+}
+
+.img_Sobre li{
+    color: #d3d3d3;
+    list-style: none;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.img_Sobre p{
+    font-size: 24px;
+    color: #d3d3d3;
+    font-weight: 400;
+    margin: 10px auto;
+}
+
+.img_Sobre li a{
+    font-size: 23px;
+}
+
+.img_Sobre li a:hover{
+    color:#d3d3d3;
+}
+
+.flex .img_Sobre img{
+    top: 0;
+    width: 500px;
+    height: 500px;
+    margin-right: 20px;
+    border-radius: 30px;
+}

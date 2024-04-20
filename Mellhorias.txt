@@ -1,0 +1,3 @@
+coisas pra implementar no site brorher's:
+	- Colocar o navbar com uma opacidade menor, deixar mais translucido quando estiver rolando.
+	- Talvez deixar o nav bar no final da primeira pag e so depois ele subir.
