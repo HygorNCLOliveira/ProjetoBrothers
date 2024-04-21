@@ -124,71 +124,97 @@ header ul li a:hover::after{
 .section1 .interface{
     margin-top:80px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
     height: 100vh;
+    width: 100%;
 }
+
+
+.interface .video_background{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.interface .video_background video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .section1 .interface .flex{
-    height: 100vh;
-    width: 90%;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: left;
+    position: relative;
+    background: linear-gradient(to right, rgba(0,0,0,0.9), transparent);
 }
 
-.txt_Inicio .btn_inicio{
-    display: flex;
-    display: block;
+.flex .txt_Inicio{
+    margin-left: 4%;
+    padding: 10px;
 }
 
-.txt_Inicio .title{
-    color:#d3d3d3;
-    font-size: 50px;
-    font-family: "Roboto Slab", serif;
+.txt_Inicio img{
+    margin-bottom: 20px;
 }
 
-.txt_Inicio .logo {
-    margin-bottom: 50px;
+.txt_Inicio h3{
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 5px 5px 10px #000;
 }
 
-.flex .txt_Inicio 
-.btn_inicio .btn_WAPP,
-.btn_inicio .btn_Endereco{
-    display: flex;
+.txt_Inicio .btn_Inicio{
+    width: 100%;
+    top: -100px;
+    position: relative;
+    display:flex;
+    justify-content: right;
 }
 
-.flex .btn_inicio p{
-    margin-left: 20px;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    color: #d9d9d9;
-    font-weight: 900;
-}
-
-.btn_inicio a button{
-    font-size: 30px;
-    margin-left: 30px;
-    padding: 10px 35px;
+.txt_Inicio .btn_Inicio button{
+    width: 90px;
+    height: 90px;
     border-radius: 50px;
-    color:#d3d3d3;
-    border: 3px solid #d3d3d3;
-    background-color: transparent;
-    transition: .2s;
+    background: transparent;
+    border: 5px solid #25D366;
+    cursor: pointer;
+    color: #25D366;
+}
+.txt_Inicio .btn_Inicio button i{
+    font-size: 50px;
 }
 
-.btn_inicio a button:hover{
-    transform: scale(1.1);
-    background-color: #7fa;
-    color:#000;
-    font-weight: 500;
-    border: none;
-    box-shadow: 0 0 8px #7fa;
+.txt_Inicio .btn_Inicio button:hover{
+    color: #fff;
+    border: 5px solid #fff;
+    background: #25D366;
+    box-shadow: 0 0 10px #7fa;
 }
 
+.flex .txt_Inicio p{
+    position: relative;
+    top: -75px;
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+    text-shadow: 5px 5px 10px #000;
+}
 
-.flex .video_Inicio video{
-    border-radius: 30px;
-    height: 80vh;
+.flex .txt_Inicio p i{
+    color: #900;
+    font-size: 50px;
+}
+.flex .txt_Inicio p a{
+    color: #fff;
+    margin: 5px;
+}
+
+.flex .txt_Inicio p:hover{
+    transform: scale(1.05);
 }
 
 /*Section2 Serviços*/
