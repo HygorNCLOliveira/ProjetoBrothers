@@ -10,7 +10,7 @@ function sliderAvaliacao(){
         idx = 0;
     }
 
-    imgs.style.transform = `translateX(${-idx * 300}px)`;
+    imgs.style.transform = `translateX(${-idx * 280}px)`;
 }
 
 setInterval(sliderAvaliacao, 3000);

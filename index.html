@@ -16,6 +16,7 @@
     <!--parte do documento-->
     <script src="/JavaScript/navbar.js" defer></script>
     <script src="/JavaScript/slider.js" defer></script>
+    <script src="/JavaScript/accordion.js" defer></script>
     <link rel="stylesheet" href="CSS/styles.css">
     
     <!--biblioteca de icones-->
@@ -25,19 +26,20 @@
     <header id="header">
         <div class="interface">
             <div class="flex">
-                <a href="index.html"><img src="/Imagens/Logo/LogoBr (LetraBranca).png" alt="Logo da loja"></a>
+                <a href="#inicio"><img src="/Imagens/Logo/LogoBr (LetraBranca).png" alt="Logo da loja"></a>
                 <ul>
-                    <li><a href="#">Serviços<i class="bi bi-tools"></i></a></li>
-                    <li><a href="#">Avaliações<i class="bi bi-star-fill"></i></a></li>
-                    <li><a href="#">Contatos<i class="bi bi-person-lines-fill"></i></a></li>
-                    <li><a href="#">Agência de envios<i class="bi bi-box"></i></a></li>                    
-                    <li><a href="#">Sobre<i class="bi bi-building-fill-exclamation"></i></a></li>                    
+                    <li><a href="#servicos">Serviços<i class="bi bi-tools"></i></a></li>
+                    <li><a href="#faq">Perguntas (FAQ)<i class="bi bi-question-lg"></i></a></li>
+                    <li><a href="#avaliacoes">Avaliações<i class="bi bi-star-fill"></i></a></li>
+                    <li><a href="#contatos">Contatos<i class="bi bi-person-lines-fill"></i></a></li>
+                    <li><a href="#envios">Agência de envios<i class="bi bi-box"></i></a></li>                    
+                    <li><a href="#sobre">Sobre<i class="bi bi-building-fill-exclamation"></i></a></li>                    
                 </ul>
             </div><!--Flex-->
         </div><!--Interface-->
     </header>
     <main>    
-        <section class="section1 inicio">
+        <section class="section1 inicio" id="inicio">
             <div class="interface">
                 
                 <div class="flex">
@@ -54,6 +56,15 @@
 
                         <p><i class="bi bi-geo-alt-fill"></i><a href="https://maps.app.goo.gl/UvdkaGLqBjbMG8uv8" target="_blank">Rua Silva Bueno, 2518 - box 18, São Paulo - SP</a></p>
                     </div>
+
+                    <div class="btn_Flutuante">
+                        <a href="https://www.instagram.com/brotherscelular?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><button class="btn_Insta"><i class="bi bi-instagram"></i></button></a>
+
+                        <a href="https://api.whatsapp.com/send?phone=5511965079384&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vim%20atrav%C3%A9s%20do%20Google%20Meu%20Neg%C3%B3cio..." target="_blank">
+                            <button class="btn_WAPP"><i class="bi bi-whatsapp"></i></button>
+                        </a>
+                        
+                    </div>
                 </div><!--Flex-->
 
                 <div class="video_background">
@@ -62,86 +73,117 @@
             </div><!--Interface-->
         </section><!--Section1-->
 
-        <section class="section2 servicos">
-            <div class="interface">
-                <h2 class="titlePage">Serviços</h2>                
+        <section class="section2 servicos" id="servicos">
+            <div class="interface">                
                 <div class="flex">
-                    <div class="txtServicos">
-                        <p>&nbsp; A <span class="nomeDaLoja">Assistência Técnica Brother's</span> conta com uma equipe especializada, dedicada e experiente em reparos de smartphones, tables e notebooks estamos aqui para oferecer soluções rápidas e confiáveis, trabalhamos com diversas marcar do mercado nacional.</p>
-                    
-                        <p>&nbsp;Utilizamos equipamentos de alta performace, técnicas avançadas e peças de qualidade para garantir que seu dispositivo seja reparado com precisão e eficiência!</p>
+                    <div class="txt_Servicos">
+                        <h2>Serviços</h2>
+
+                        <div class="container_Cards">
+                            <div class="cards">
+                                <img src="/Imagens/Servicos/CelularReparo.jpg" alt="Manuteção de celular">
+                                <h3>Celular : </h3>
+                                <ul>
+                                    <li>Troca de tela</li>
+                                    <li>Troca de vidro</li>
+                                    <li>Bateria</li>
+                                    <li>Conector de carga</li>
+                                    <li>Software</li>
+                                    <li>Reparo de placa</li>
+                                </ul>
+                            </div>
+                            <div class="cards">
+                                <img src="/Imagens/Servicos/TabletReparo.jpg" alt="Manuteção de tablet">
+                                <h3>Tablet : </h3>
+                                <ul>
+                                    <li>Troca de tela</li>
+                                    <li>Troca de vidro</li>
+                                    <li>Bateria</li>
+                                    <li>Conector de carga</li>
+                                    <li>Software</li>
+                                    <li>Reparo de placa</li>
+                                </ul>
+                            </div>
+                            <div class="cards">
+                                <img src="/Imagens/Servicos/Laptop.jpg" alt="Manuteção de Laptop">
+                                <h3>Notebook : </h3>
+                                <ul>
+                                    <li>Upgrade</li>
+                                    <li>Troca de tela</li>
+                                    <li>Troca de teclado</li>
+                                    <li>Fonte</li>
+                                    <li>Bateria</li>
+                                    <li>Conector de carga</li>
+                                    <li>Reparo de placa</li>
+                                </ul>
+                            </div>                        <div class="cards">
+                                <img src="/Imagens/Servicos/AppleWatchReparo.jpg" alt="Manuteção de Apple Watch">
+                                <h3>Apple Watch : </h3>
+                                <ul>
+                                    <li>Bateria</li>
+                                    <li>Troca de vidro</li>
+                                    <li>Troca de tela</li>
+                                    <li>Software</li>
+                                </ul>
+                            </div>
+                        </div><!--container_Cards-->    
+                    </div><!--txt_Servicos-->
+                    <div class="video_Servicos">
+                        <video src="/Imagens/video/videoInicio.mp4" autoplay muted loop></video>
                     </div>
-                    
-
-                    <div class="containerCards">
-                        <div class="cards">
-                            <img src="/Imagens/Servicos/CelularReparo.jpg" alt="Manuteção de celular">
-                            <h3>Reparo de celular : </h3>
-                            <ul>
-                                <li>Troca de tela</li>
-                                <li>Troca de vidro</li>
-                                <li>Bateria</li>
-                                <li>Conector de carga</li>
-                                <li>Software</li>
-                                <li>Reparo de placa</li>
-                            </ul>
-                        </div>
-                        <div class="cards">
-                            <img src="/Imagens/Servicos/TabletReparo.jpg" alt="Manuteção de tablet">
-                            <h3>Reparo de tablet : </h3>
-                            <ul>
-                                <li>Troca de tela</li>
-                                <li>Troca de vidro</li>
-                                <li>Bateria</li>
-                                <li>Conector de carga</li>
-                                <li>Software</li>
-                                <li>Reparo de placa</li>
-                            </ul>
-                        </div>
-                        <div class="cards">
-                            <img src="/Imagens/Servicos/Laptop.jpg" alt="Manuteção de Laptop">
-                            <h3>Reparo de notebook : </h3>
-                            <ul>
-                                <li>Upgrade</li>
-                                <li>Troca de tela</li>
-                                <li>Troca de teclado</li>
-                                <li>Fonte</li>
-                                <li>Bateria</li>
-                                <li>Conector de carga</li>
-                                <li>Reparo de placa</li>
-                            </ul>
-                        </div>                        <div class="cards">
-                            <img src="/Imagens/Servicos/AppleWatchReparo.jpg" alt="Manuteção de Apple Watch">
-                            <h3>Reparo de Apple Watch : </h3>
-                            <ul>
-                                <li>Bateria</li>
-                                <li>Troca de vidro</li>
-                                <li>Troca de tela</li>
-                                <li>Software</li>
-                            </ul>
-                        </div>
-                    </div>    
-
                 </div><!--Flex-->
             </div><!--Interface-->
         </section><!--Section 2-->
 
-        <section class="section3 avaliacoes">
+        <section class="section3 faq" id="faq">
+            <div class="interface">
+                <h3>Perguntas frequentes</h3>
+                <div class="flex">
+                    <div class="accordion">
+                        <div class="content_Bx">
+                            <div class="title_Accordion">Tem garantia?</div>
+                            <div class="content">Sim, 90 dias de garantia.
+                                <p>Não cobrimos garantia em caso de quebra por mal uso e contato com liquido!</p>
+                            </div>
+                        </div>
+                        <div class="content_Bx">
+                            <div class="title_Accordion">Em quanto tempo fica pronto?</div>
+                            <div class="content">Grande parte dos reparos ficam prontos no mesmo dia, prazos de 1h a 3h, porém existem casos mais complexos necessitam de mais tempo para ser reparado.
+                            </div>
+                        </div>
+                        <div class="content_Bx">
+                            <div class="title_Accordion">Orçamento tem custo?</div>
+                            <div class="content">Não, a Brother's oferece aos seus futuros clientes o orçamento gratuito!</p>
+                            </div>
+                        </div>
+                        <div class="content_Bx">
+                            <div class="title_Accordion">Em quanto tempo se faz o orçamento?</div>
+                            <div class="content">A maior parte dos orçamentos são realizados na mesma hora, porém existem casos que pedem mais atenção.</p>
+                            </div>
+                        </div>
+                        <div class="content_Bx">
+                            <div class="title_Accordion">Vou perder minhas informações do aparelho?</div>
+                            <div class="content">Os reparos não restauram a padrão de fabrica os aparelhos, exceto nos casos de erro no software.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div><!--Flex-->
+            </div><!--interface-->
+        </section><!--section3 faq-->
+
+        <section class="section4 avaliacoes" id="avaliacoes">
             <div class="interface">
                 <h2>O que dizem sobre nós...</h2>
                 <div class="flex">
                     <div class="txtAvaliacoes">
-                        <p>&nbsp; No coração do Ipiranga, onde a tradição e a modernidade se encontram, uma empresa se destaca como a principal referência em assistência técnica na região. Com um compromisso inabalável com a qualidade, eficiência e satisfação do cliente, a <span class="nomeDaLoja">Brother's Assistência Técnica</span> firma-se como a melhor escolha para resolver suas necessidades tecnológicas.</p><br>
-                        <p>&nbsp; A nossa reputação impecável não é apenas uma questão de números, mas sim de feedbacks positivos e reconhecimento da comunidade local. Nossos clientes confiam em nós para entregar resultados excepcionais, e é por isso que somos consistentemente avaliados como a melhor assistência técnica do Ipiranga.</p>
-                    
-
+                        <p>&nbsp; No coração do Ipiranga, onde a tradição e a modernidade se encontram, uma empresa se destaca como a principal referência em assistência técnica na região. Com um compromisso inabalável com a qualidade, eficiência e satisfação do cliente, a <span class="nomeDaLoja">Brother's Assistência Técnica</span> firma-se como a melhor escolha para resolver suas necessidades tecnológicas.</p>
                         <div class="btn_Avaliacoes">
                             <a href="https://g.co/kgs/oNZMmxP" target="_blank"><button>Mais Avaliações...</button></a>
                         </div>
                     </div><!--textAvaliacoes-->
 
-                    <div class="slider">
-                        
+                    <div class="slider">                       
                         <a href="https://g.co/kgs/oNZMmxP" target="_blank">
 
                             <div class="containerSlide">
@@ -167,13 +209,13 @@
             </div><!--interface-->
         </section>
 
-        <section class="section4 contatos">
+        <section class="section5 contatos" id="contatos">
             <div class="interface">
                 <h2>Fale conosco</h2>
                 <div class="flex">
-                    <div class="containerContatos">
+                    <div class="container_Contatos">
                         <div class="btn_Contato">
-                            <a href="https://maps.app.goo.gl/e9F4fsUMUvzZSxR5A?g_st=iw"><button><i class="bi bi-geo-alt"></i> R Silva Bueno, 2518 - box 18, São Paulo-SP</button></a>
+                            <a href="https://maps.app.goo.gl/e9F4fsUMUvzZSxR5A?g_st=iw" target="_blank"><button><i class="bi bi-geo-alt"></i> R Silva Bueno, 2518 - box 18, São Paulo-SP</button></a>
                         </div>
 
                         <div class="btn_Contato">
@@ -181,11 +223,11 @@
                         </div>
 
                         <div class="btn_Contato">
-                            <a href="https://api.whatsapp.com/send?phone=5511965079384&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vim%20atrav%C3%A9s%20do%20Google%20Meu%20Neg%C3%B3cio..."><button><i class="bi bi-whatsapp"></i> (11) 96507-9384 </button></a>
+                            <a href="https://api.whatsapp.com/send?phone=5511965079384&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vim%20atrav%C3%A9s%20do%20Google%20Meu%20Neg%C3%B3cio..." target="_blank"><button><i class="bi bi-whatsapp"></i> (11) 96507-9384 </button></a>
                         </div>
 
                         <div class="btn_Contato">
-                            <a href="https://www.instagram.com/brotherscelular?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><button><i class="bi bi-instagram"></i> @BrothersCelular </button></a>
+                            <a href="https://www.instagram.com/brotherscelular?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><button><i class="bi bi-instagram"></i> @BrothersCelular </button></a>
                         </div>
                     </div><!--COntainerContatos-->
 
@@ -196,7 +238,7 @@
             </div><!--interface-->
         </section><!--section4 Contatos-->
 
-        <section class="section5 envios">
+        <section class="section6 envios" id="envios">
             <div class="interface">
                 <h2>Agência de envios</h2>
                 <div class="flex">
@@ -214,7 +256,7 @@
             </div><!--Interface-->
         </section><!--Section5 envios-->
 
-        <section class="section6 sobre">
+        <section class="section7 sobre" id="sobre">
             <div class="interface">
                 <h2>Sobre a <span class="nomeDaLoja">Brother's<span></h2>
                 <div class="flex">

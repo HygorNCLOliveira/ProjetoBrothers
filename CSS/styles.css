@@ -5,20 +5,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
     background-color: #000;
-    
     color:#d3d3d3;
 }
 section{
-    margin-top:90px;
     min-height: 100vh;
 }
 .interface{
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 90px;
 }
 .flex{
     display: flex;
@@ -59,6 +61,7 @@ header.rolar{
 header .interface{
     width: 100%;
     margin: 0 auto;
+    padding: 0;
 }
 
 header .flex{
@@ -122,13 +125,11 @@ header ul li a:hover::after{
 
 /*Section1 inicio*/
 .section1 .interface{
-    margin-top:80px;
-    display: flex;
     justify-content: left;
     height: 100vh;
     width: 100%;
+    padding-top: 90px;
 }
-
 
 .interface .video_background{
     height: 100%;
@@ -217,97 +218,252 @@ header ul li a:hover::after{
     transform: scale(1.05);
 }
 
+.flex .btn_Flutuante{
+    width: 170px;
+    height: 100px;
+    position: fixed;
+    right: -90px;
+    bottom: 80px;
+
+}
+.flex .btn_Flutuante button i{
+    font-size: 50px;
+    color:#FFF;
+    padding-left: 15px;
+
+}
+.flex .btn_Flutuante .btn_WAPP{
+    width: 150px;
+    height: 70px;
+    border-radius: 30px;
+    border: 3px solid #FFF;
+    background-color: #25D366;
+    cursor: pointer;
+    text-align: left;
+    transition: .3s;
+}
+
+.flex .btn_Flutuante .btn_WAPP:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #7fa;
+}
+
+.flex .btn_Flutuante .btn_Insta{
+    margin-bottom: 10px;
+    width: 150px;
+    height: 70px;
+    border-radius: 30px;
+    border: 3px solid #FFF;
+    background: linear-gradient(to right, #515BD3, #8134AF, #DD2A7B, #FEDA77, #F58529);
+    cursor: pointer;
+    text-align: left;
+    transition: .3s;
+}
+
+.flex .btn_Flutuante .btn_Insta:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #7fa;
+}
+
 /*Section2 Serviços*/
 .section2 .interface{
-    background-image: url(/Imagens/Testes/IMG_BackServicos1.jpg);
+    background-image: url(/Imagens/Testes/IMG_BackServicos2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
-    height: 110vh;
+    background-position: center;
+    height: 100vh;
 }
+
 .section2 .flex{
-    width: 100vw;
-    margin-top: 20px;
-    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
 }
-.section2 .flex p{
-    margin: 5px;
+
+.flex .txt_Servicos{
+    width: 60%;
+    height: 100%;
+}
+.txt_Servicos h2{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 5px 5px 10px #000;
+    padding-bottom: 30px;
+}
+.txt_Servicos p{
+    margin: 0 auto;
     text-justify:distribute;
     font-size: 25px;
     width: 900px;
     color:#fff;
 }
-.section2 .flex span{
+.txt_Servicos span{
     color:#7fa;
 }
 
-.section2 .flex .containerCards{
+.txt_Servicos .container_Cards{
     display: flex;
 }
-.section2 .cards{
+.container_Cards .cards{
     width:250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin:40px 10px;
+    margin:40px 15px 0 15px;
     transition: .2s;
     z-index: 0;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.3);
 }
-.section2 .cards:hover{
+.container_Cards .cards:hover{
     transform: scale(1.1);
     box-shadow: 0 0 8px #7fa;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.9);
 }
-.section2 .cards img{
+.cards img{
     width: 180px;
     height: 180px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
-.section2 .cards h3{
+.cards h3{
     font-family: "Roboto Slab", serif;
     padding: 5px;
     font-size: 25px;
     text-align: center;
 }
-.section2 .interface .flex .cards li{
+ .cards li{
     text-justify: distribute;
     font-size: 20px;
 }
-.section2 .cards ul{
+.cards ul{
     padding:5px;
 }
-.section2 .cards ul li{
+.cards ul li{
     text-align: left;
 }
 
-/*Section3 Avaliacoes*/
-.section3 .interface .flex{
+
+.flex .video_Servicos video{
+    height: 650px;
+    border-radius: 30px;
+}
+
+/*Section3 FAQ*/
+
+.section3 .interface h3{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    margin: 50px auto;
+}
+
+.section3 .flex{
+    width: 100%;
+    justify-content: left;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+
+.accordion .content_Bx{
+    position: relative;
+    margin: 10px 20px;
+}
+
+.content_Bx .title_Accordion{
+    width: 800px;
+    position: relative;
+    padding: 10px 35px;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000;
+    background: linear-gradient(to right, rgba(119, 255, 170,0.9),transparent);
+}
+
+.content_Bx .title_Accordion::before{
+    content: '+';
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    color:#7fa;
+    transform: translateY(-15%);
+    font-size: 40px;
+}
+
+.content_Bx .content{
+    width: 800px;
+    position: relative;
+    background: linear-gradient(to right, rgba(30, 32, 31, 0.9),transparent);
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    height: 0;
+    overflow: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.content_Bx.active .content{
+    height: 150px;
+    padding: 10px;
+} 
+
+.content_Bx.active .title_Accordion::before{
+    content: '-';
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+
+
+/*Section4 Avaliacoes*/
+.section4 .interface{
+    background: url(/Imagens/Testes/imgBackgroundAvaliacao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.section4 .interface h2{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 5px 5px 10px #000;
+    padding-bottom: 30px;
+}
+
+.section4 .interface .flex{
     justify-content: space-between;
     width: 80vw;
 }
 
 .interface .flex .txtAvaliacoes{
+    position: relative;
+    right: 89px;
+    top: -109px;
     width: 900px;
     padding: 10px;
 }
 
 .txtAvaliacoes p{
     font-size: 30px;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 5px 5px 10px #000;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
 }
 
 .txtAvaliacoes span{
     font-size: 35px;
     color:#7fa;
-}
-
-.btn_Avaliacoes{
-    display:flex;
-    justify-content: end;
 }
 
 .btn_Avaliacoes button{
@@ -332,8 +488,11 @@ header ul li a:hover::after{
 }
 
 .flex .slider{
+    position: relative;
+    top: -70px;
+    right: -100px;
     width: 400px;
-    height: 730px;
+    height: 650px;
     background-image: url(/Imagens/Avaliacoes/TesteAvaliacao1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,7 +505,7 @@ header ul li a:hover::after{
 .slider .containerSlide{
     margin-top: 170px;
     overflow: hidden;
-    width: 300px;
+    width: 280px;
     height: 270px;
 }
 
@@ -358,15 +517,15 @@ header ul li a:hover::after{
 
 .slide img{
     object-fit: cover;
-    width: 300px;
+    width: 280px;
 }
 
-/* Section4 Contatos*/
-.section4 .interface{
-    box-shadow: 0 20px 50px #d3d3d3a1;
+/* Section5 Contatos*/
+.section5 .interface{
+    height: 100vh;
 }
 
-.section4 .flex .containerContatos{
+.section5 .flex .containerContatos{
     display: block;
 }
 .flex .btn_Contato button{
@@ -403,14 +562,17 @@ header ul li a:hover::after{
     transform: scale(1.1);
 }
 
-/*Section5 Envios*/
+/*Section6 Envios*/
 
-.section5 .interface{
+.section6 .interface{
     height: 100vh;
     background-image: url(/Imagens/Envios/caixas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.section5 .interface .flex{
+.section6 .interface .flex{
     justify-content: space-around;
     width: 90vw;
 }
@@ -421,7 +583,7 @@ header ul li a:hover::after{
 } 
 
 .flex .imgs_Envios img{
-    width: 300px;
+    width: 270px;
     margin: 20px;
     border-radius: 20px; 
 }
@@ -439,8 +601,8 @@ header ul li a:hover::after{
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Section6 Sobre*/
-.section6 .interface h2{
+/* Section7 Sobre*/
+.section7 .interface h2{
     color:#d3d3d3;
 }
 .flex .txt_Sobre{
